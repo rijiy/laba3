@@ -22,14 +22,14 @@ int main() {
         cout << "\nPtr3 = " << *ptr3.get() << " cnt = " << *ptr3.use_count();
 
         cout << "\n\nPtr3 был скопирован из Ptr2. "
-                "Теперь удалим Ptr2 для проверки"
-        << " количества указателей на y...\nУдаляем PTR2...";
+                "Удаляем Ptr2 для проверки"
+        << " количества указателей на y...\nУдаляем Ptr2...";
         ptr2.reset();
         cout << "\nPtr3 = " << *ptr3.get() << " cnt = " << *ptr3.use_count();
 
         ptr1.swap(ptr3);
 
-        cout << "\n\nСвапаем Ptr1 и Ptr3 :";
+        cout << "\n\nМеняем Ptr1 и Ptr3 :";
         cout << "\nPtr1 = " << *ptr1.get();
         cout << "\nPtr3 = " << *ptr3.get();
 
